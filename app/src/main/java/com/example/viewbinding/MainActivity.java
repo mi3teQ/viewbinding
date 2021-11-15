@@ -50,5 +50,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        WylaczImie.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    PodajImie.setEnabled(false);
+                }else{
+                    PodajImie.setEnabled(true);
+                }
+            }
+        });
+        WylaczNazwe.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    PodajNazwe.setEnabled(false);
+                }else{
+                    PodajNazwe.setEnabled(true);
+                }
+            }
+        });
+        WylaczWiek.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    PodajWiek.setEnabled(false);
+                }else{
+                    PodajWiek.setEnabled(true);
+                }
+            }
+        });
+        WylaczNumer.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    PodajNumer.setEnabled(false);
+                }else{
+                    PodajNumer.setEnabled(true);
+                }
+            }
+        });
+        WylaczEmail.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    PodajEmail.setEnabled(false);
+                }else{
+                    PodajEmail.setEnabled(true);
+                }
+            }
+        });
     }
 }
